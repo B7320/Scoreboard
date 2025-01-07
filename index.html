@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+
+    <title>BasketBall</title>
+    <link rel="icon" type="image/x-icon" href="/image/basketball.png">
+</head>
+
+<body>
+    <h1> 🏀 BasketBall 🏀</h1>
+    <div class="container">
+        <div class="col">
+            <h3>HOME</h3>
+            <h2 class="score" id="home-score">0</h2>
+            <div>
+                <button id="home-score-btn-1" onclick="increaseHomeScoreOne()">+1</button>
+                <button id="home-score-btn-2" onclick="increaseHomeScoreTwo()">+2</button>
+                <button id="home-score-btn-3" onclick="increaseHomeScoreThree()">+3</button>
+            </div>
+        </div>
+        <div class="col">
+            <h3>GUEST</h3>
+            <h2 class="score" id="guest-score">0</h2>
+            <div>
+                <button id="guest-score-btn-1" onclick="increaseGuestScoreOne()">+1</button>
+                <button id="guest-score-btn-2" onclick="increaseGuestScoreTwo()">+2</button>
+                <button id="guest-score-btn-3" onclick="increaseGuestScoreThree()">+3</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button id="compare-scores-btn" onclick="compareScores()">Compare Scores</button>
+        <h2 id="winner"></h2>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
